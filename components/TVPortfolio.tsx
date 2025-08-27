@@ -1,13 +1,12 @@
+"use client";
+
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { House, ArrowLeft, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, CirclePlay, Plus, GripHorizontal } from "lucide-react";
+import { House, ArrowLeft, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, CirclePlay, GripHorizontal } from "lucide-react";
 
 /**
  * TV Portfolio – single-file React component
  * ------------------------------------------------------
- * Drop this into a Next.js page (e.g., app/page.tsx or pages/index.tsx).
- * TailwindCSS + Framer Motion + lucide-react recommended.
- *
  * Features
  * - Home screen that mimics a TV UI with horizontal rows (About, Experience, Projects, Hobbies)
  * - Keyboard navigation (arrow keys + Enter/Backspace)
@@ -16,7 +15,6 @@ import { House, ArrowLeft, ChevronUp, ChevronDown, ChevronLeft, ChevronRight, Ci
  * - URL hash sync so back/forward works (#home or #section=itemIndex)
  */
 
-// -------------------- Sample Data --------------------
 
 type Item = {
   id: string;
